@@ -6,4 +6,4 @@ I 😘 SSB and their open API.
 See [ssb-mcp-server/README.md](ssb-mcp-server/README.md) for instructions
 Claude Opus 4.6 made the code in it's entirety. Use only at your own risk.
 
-MIT License
+MIT License - PRs welcome
