@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "ssb-statistics": {
+      "command": "node",
+      "args": ["${workspaceFolder}/ssb-mcp-server/dist/index.js"],
+      "type": "stdio"
+    }
+  }
+}

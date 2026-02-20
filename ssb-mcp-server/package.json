@@ -1,0 +1,25 @@
+{
+  "name": "ssb-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Statistics Norway (SSB) API - browse, search, and query Norwegian statistical data",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "ssb-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["mcp", "ssb", "statistics-norway", "statistisk-sentralbyra", "pxweb"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "typescript": "^5.7.3"
+  }
+}
