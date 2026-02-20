@@ -18,50 +18,43 @@ It exposes five tools:
 | ssb_query_builder | Generate a ready-to-use query template for any table |
 
 ## Getting started
-
 ### Prerequisites
-
 - **Node.js** (v18 or later)
 - **VS Code** with GitHub Copilot (or any MCP-compatible client)
 
 ### Install and build
-
-\`\`\`bash
+```bash
 cd ssb-mcp-server
 npm install
 npm run build
-\`\`\`
+```
 
 ### Configure in VS Code
-
 The repo includes a .vscode/mcp.json that wires everything up automatically:
-
-\`\`\`json
+```json
 {
   "servers": {
     "ssb-statistics": {
       "command": "node",
-      "args": ["\${workspaceFolder}/ssb-mcp-server/dist/index.js"],
+      "args": ["${workspaceFolder}/ssb-mcp-server/dist/index.js"],
       "type": "stdio"
     }
   }
 }
-\`\`\`
+```
 
 Just open this folder in VS Code and the SSB server will be available in Copilot Chat.
 
 ### Using with other MCP clients
-
 You can use this server with any MCP-compatible client by running:
 
-\`\`\`bash
+```bash
 node ssb-mcp-server/dist/index.js
-\`\`\`
+```
 
 It communicates over **stdio** using the standard MCP protocol.
 
 ## Example questions you can ask
-
 - "What was Norway's population in 2024?"
 - "Show me unemployment rates by county over the last 5 years"
 - "How many people have the name Ola in Norway?"
@@ -72,9 +65,7 @@ It communicates over **stdio** using the standard MCP protocol.
 The AI will use the tools to browse, search, and query SSB's data to answer your questions.
 
 ## How it was made
-
 This entire project - the TypeScript MCP server, the SSB PxWeb API client, the JSON-stat2 response parser - was built through a conversation with Claude Opus 4.6. No code was hand-written. Just vibes.
 
 ## License
-
 MIT
