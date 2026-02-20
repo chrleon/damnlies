@@ -1,4 +1,4 @@
-# SSB MCP Server
+# Damnlies - SSB MCP Server
 
 A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server that lets AI assistants query and explore data from **Statistics Norway (SSB)** - Norway's central statistics bureau.
 
